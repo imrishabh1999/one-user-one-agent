@@ -1,0 +1,145 @@
+{
+ "viewer_id": "V-3353",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-05-27T06:01:28Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3353#row3291",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 164693,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3353#row3291",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 164693,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0068859",
+   "observed_at": "2026-10-01T15:14:53Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d4"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3353#row3291",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 164693,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3353#row3291",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 164693,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01942",
+   "goal_id": "G03",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01942",
+   "opened_at": "2026-10-01T15:14:53Z",
+   "deadline": "2026-10-04T15:14:53Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01942",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0095",
+    "title:T0175",
+    "title:T0325",
+    "title:T0245",
+    "title:T0952",
+    "title:T0417"
+   ],
+   "confidence": 0.55,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T15:14:53Z",
+   "trigger": "app_open",
+   "goal": "G03"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-01942",
+   "decision_id": "D-01942",
+   "viewer_id": "V-3353",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790867697.98,
+   "content": [
+    "title:T0095",
+    "title:T0175",
+    "title:T0325",
+    "title:T0245",
+    "title:T0952",
+    "title:T0417"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G03",
+   "published_at": "2026-10-01T15:14:57Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01942",
+   "viewer_id": "V-3353",
+   "goal_id": "G03",
+   "decision_id": "D-01942",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T15:14:53Z",
+   "deadline": "2026-10-04T15:14:53Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G03",
+   "titles": [
+    "T0095",
+    "T0175",
+    "T0325",
+    "T0245",
+    "T0952",
+    "T0417"
+   ],
+   "action": "HOME_PAGE",
+   "decision_id": "D-01942"
+  }
+ ]
+}

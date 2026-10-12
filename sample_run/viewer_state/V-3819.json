@@ -1,0 +1,130 @@
+{
+ "viewer_id": "V-3819",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-14T04:56:26Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3819#row3748",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 151332,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3819#row3748",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 151332,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:E0067173",
+   "observed_at": "2026-10-01T11:32:12Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d3"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3819#row3748",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 151332,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3819#row3748",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 151332,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00021",
+   "goal_id": "G04",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00021",
+   "opened_at": "2026-10-01T11:32:12Z",
+   "deadline": "2026-10-08T11:32:12Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00021",
+   "status": "PUBLISHED",
+   "action": "HERO_SLOT",
+   "content": [
+    "title:T1045"
+   ],
+   "confidence": 0.6,
+   "reason": "continue the half-watched series",
+   "at": "2026-10-01T11:32:12Z",
+   "trigger": "app_open",
+   "goal": "G04"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00021",
+   "decision_id": "D-00021",
+   "viewer_id": "V-3819",
+   "channel": "HERO_SLOT",
+   "is_message": false,
+   "publish_at": 1790854336.98,
+   "content": [
+    "title:T1045"
+   ],
+   "dialect": "d4",
+   "template": null,
+   "send_at": null,
+   "goal": "G04",
+   "published_at": "2026-10-01T11:32:16Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00021",
+   "viewer_id": "V-3819",
+   "goal_id": "G04",
+   "decision_id": "D-00021",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T11:32:12Z",
+   "deadline": "2026-10-08T11:32:12Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G04",
+   "titles": [
+    "T1045"
+   ],
+   "action": "HERO_SLOT",
+   "decision_id": "D-00021"
+  }
+ ]
+}

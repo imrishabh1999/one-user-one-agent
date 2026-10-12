@@ -1,0 +1,130 @@
+{
+ "viewer_id": "V-0894",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-05-17T20:23:45Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0894#row880",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 162411,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0894#row880",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 162411,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:E0069037",
+   "observed_at": "2026-10-01T15:36:51Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0894#row880",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 162411,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0894#row880",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 162411,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01121",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "SUCCEEDED",
+   "decision_id": "D-01121",
+   "opened_at": "2026-10-01T13:44:33Z",
+   "deadline": "2026-10-08T13:44:33Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01121",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.7,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T13:44:33Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  },
+  {
+   "decision_id": "D-02119",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.7,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T15:36:51Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01121",
+   "viewer_id": "V-0894",
+   "goal_id": "G05",
+   "decision_id": "D-01121",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T13:44:33Z",
+   "deadline": "2026-10-08T13:44:33Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "SUCCEEDED",
+   "reason": "purchase at 2026-10-07T22:35:18Z",
+   "evidence": [
+    "event:S0002318"
+   ],
+   "attribution": "holdout_no_action"
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "what_worked",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G05",
+   "action": "IN_APP",
+   "dialect": "d3",
+   "attribution": "holdout_no_action",
+   "decision_id": "D-01121"
+  },
+  {
+   "kind": "dialect_confirmed",
+   "ts": "2026-10-11T18:00:01Z",
+   "dialect": "d3",
+   "by": [
+    "event:S0002318"
+   ]
+  }
+ ]
+}

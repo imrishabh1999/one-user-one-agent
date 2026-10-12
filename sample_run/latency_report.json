@@ -1,0 +1,98 @@
+{
+ "decisions": 3136,
+ "decided_in_ms": {
+  "p50": 4980,
+  "p95": 9480,
+  "p99": 9480,
+  "max": 16500
+ },
+ "queue_wait_ms": {
+  "p50": 0.0,
+  "max": 3980.0000190734863
+ },
+ "over_60s": 0,
+ "over_5min": 0,
+ "max_model_calls_in_a_decision": 2,
+ "max_tool_calls_in_a_decision": 6,
+ "budget": {
+  "model_calls": 8,
+  "tool_calls": 20
+ },
+ "workers": 4,
+ "llm_client": {
+  "calls": 2640,
+  "failures": 4,
+  "skipped_breaker_open": 31,
+  "skipped_budget": 0
+ },
+ "model_skipped_for_load_shedding": 0,
+ "windows": {
+  "evening_peak_3x_traffic (20:00-20:10 IST)": {
+   "decisions": 207,
+   "p50_ms": 4980,
+   "max_ms": 9480,
+   "statuses": {
+    "PUBLISHED": 145,
+    "HOLDOUT_SUPPRESSED": 17,
+    "NO_ACTION": 45
+   },
+   "model_status": {
+    "ok": 176
+   },
+   "degraded": 0,
+   "stale": 0
+  },
+  "model_outage (19:00-19:07 IST)": {
+   "decisions": 46,
+   "p50_ms": 480,
+   "max_ms": 9480,
+   "statuses": {
+    "PUBLISHED": 34,
+    "NO_ACTION": 10,
+    "HOLDOUT_SUPPRESSED": 2
+   },
+   "model_status": {
+    "timeout": 4,
+    "circuit_open": 31,
+    "ok": 10
+   },
+   "degraded": 0,
+   "stale": 0
+  },
+  "store_outage_then_slow (21:00-21:05 IST)": {
+   "decisions": 36,
+   "p50_ms": 7200,
+   "max_ms": 16500,
+   "statuses": {
+    "NO_ACTION": 19,
+    "PUBLISHED": 17
+   },
+   "model_status": {
+    "ok": 17
+   },
+   "degraded": 12,
+   "stale": 0
+  },
+  "buffered_offline_burst (18:30-18:31 IST)": {
+   "decisions": 159,
+   "p50_ms": 719,
+   "max_ms": 9480,
+   "statuses": {
+    "NO_ACTION": 154,
+    "PUBLISHED": 3,
+    "HOLDOUT_SUPPRESSED": 2
+   },
+   "model_status": {
+    "ok": 6
+   },
+   "degraded": 0,
+   "stale": 150
+  }
+ },
+ "trigger_results": {
+  "NO_ACTION": 747,
+  "PUBLISHED": 2164,
+  "DUPLICATE_TRIGGER_IGNORED": 77,
+  "HOLDOUT_SUPPRESSED": 225
+ }
+}

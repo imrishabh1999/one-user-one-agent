@@ -1,0 +1,101 @@
+{
+ "viewer_id": "V-0901",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-05-28T09:34:04Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0901#row886",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162544,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0901#row886",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162544,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:E0068029",
+   "observed_at": "2026-10-01T13:39:04Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d1",
+    "watch_history:d1"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0901#row886",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162544,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0901#row886",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162544,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01078",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01078",
+   "opened_at": "2026-10-01T13:39:04Z",
+   "deadline": "2026-10-08T13:39:04Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01078",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.45,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T13:39:04Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01078",
+   "viewer_id": "V-0901",
+   "goal_id": "G05",
+   "decision_id": "D-01078",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T13:39:04Z",
+   "deadline": "2026-10-08T13:39:04Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": []
+}

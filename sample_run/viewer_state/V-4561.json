@@ -1,0 +1,111 @@
+{
+ "viewer_id": "V-4561",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-08T04:00:19Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4561#row4471",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 157931,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4561#row4471",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 157931,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:E0067917",
+   "observed_at": "2026-10-01T13:22:11Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d1"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4561#row4471",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 157931,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4561#row4471",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 157931,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00960",
+   "goal_id": "G01",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00960",
+   "opened_at": "2026-10-01T13:22:11Z",
+   "deadline": "2026-10-04T13:22:11Z",
+   "notes": [
+    "success rule corrected v1->v2 at 2026-10-01T15:00:00Z; will be judged under v2, v1 verdict also reported"
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00960",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0701",
+    "title:T0847",
+    "title:T0198",
+    "title:T0574",
+    "title:T0555",
+    "title:T1470"
+   ],
+   "confidence": 0.55,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T13:22:11Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00960",
+   "viewer_id": "V-4561",
+   "goal_id": "G01",
+   "decision_id": "D-00960",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T13:22:11Z",
+   "deadline": "2026-10-04T13:22:11Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 2,
+   "verdict_under_rule_at_open": "SUCCEEDED",
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": [],
+   "verdict_changed_by_rule_correction": true
+  }
+ ],
+ "learnings": []
+}

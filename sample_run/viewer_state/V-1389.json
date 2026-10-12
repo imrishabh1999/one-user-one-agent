@@ -1,0 +1,191 @@
+{
+ "viewer_id": "V-1389",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-27T03:53:46Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1389#row1366",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 163144,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1389#row1366",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 163144,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-11T03:53:46Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-1389#row1366",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:E0068106",
+   "observed_at": "2026-10-01T13:49:04Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1389#row1366",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 163144,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1389#row1366",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 163144,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00491",
+   "goal_id": "G02",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00491",
+   "opened_at": "2026-10-01T12:38:00Z",
+   "deadline": "2026-10-02T12:38:00Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00491",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1419",
+    "title:T0935",
+    "title:T0006",
+    "title:T1086",
+    "title:T1092",
+    "title:T0815"
+   ],
+   "confidence": 0.5,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T12:38:00Z",
+   "trigger": "app_open",
+   "goal": "G02"
+  },
+  {
+   "decision_id": "D-01163",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1419",
+    "title:T0935",
+    "title:T0006",
+    "title:T1086",
+    "title:T1092",
+    "title:T0815"
+   ],
+   "confidence": 0.5,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T13:49:04Z",
+   "trigger": "app_open",
+   "goal": "G02"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00491",
+   "decision_id": "D-00491",
+   "viewer_id": "V-1389",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790858284.98,
+   "content": [
+    "title:T1419",
+    "title:T0935",
+    "title:T0006",
+    "title:T1086",
+    "title:T1092",
+    "title:T0815"
+   ],
+   "dialect": "d2",
+   "template": null,
+   "send_at": null,
+   "goal": "G02",
+   "published_at": "2026-10-01T12:38:04Z"
+  },
+  {
+   "action_id": "A-D-01163",
+   "decision_id": "D-01163",
+   "viewer_id": "V-1389",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790862548.98,
+   "content": [
+    "title:T1419",
+    "title:T0935",
+    "title:T0006",
+    "title:T1086",
+    "title:T1092",
+    "title:T0815"
+   ],
+   "dialect": "d2",
+   "template": null,
+   "send_at": null,
+   "goal": "G02",
+   "published_at": "2026-10-01T13:49:08Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00491",
+   "viewer_id": "V-1389",
+   "goal_id": "G02",
+   "decision_id": "D-00491",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T12:38:00Z",
+   "deadline": "2026-10-02T12:38:00Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G02",
+   "titles": [
+    "T1419",
+    "T0935",
+    "T0006",
+    "T1086",
+    "T1092",
+    "T0815"
+   ],
+   "action": "HOME_PAGE",
+   "decision_id": "D-00491"
+  }
+ ]
+}

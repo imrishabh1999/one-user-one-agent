@@ -1,0 +1,114 @@
+{
+ "viewer_id": "V-3063",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-22T00:38:34Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3063#row3006",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 175497,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3063#row3006",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 175497,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-06T00:38:34Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-3063#row3006",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:E0069304",
+   "observed_at": "2026-10-01T16:14:57Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3063#row3006",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 175497,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3063#row3006",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 175497,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-02401",
+   "goal_id": "G01",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-02401",
+   "opened_at": "2026-10-01T16:14:57Z",
+   "deadline": "2026-10-04T16:14:57Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-02401",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1395",
+    "title:T0758",
+    "title:T0533",
+    "title:T0012",
+    "title:T0385",
+    "title:T0937"
+   ],
+   "confidence": 0.65,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T16:14:57Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-02401",
+   "viewer_id": "V-3063",
+   "goal_id": "G01",
+   "decision_id": "D-02401",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T16:14:57Z",
+   "deadline": "2026-10-04T16:14:57Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 2,
+   "rule_version_used": 2,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": []
+}

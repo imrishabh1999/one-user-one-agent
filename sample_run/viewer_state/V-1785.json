@@ -1,0 +1,190 @@
+{
+ "viewer_id": "V-1785",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-10T19:24:29Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1785#row1749",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 165746,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1785#row1749",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 165746,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:E0068999",
+   "observed_at": "2026-10-01T15:32:26Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d2"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1785#row1749",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 165746,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1785#row1749",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 165746,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01879",
+   "goal_id": "G03",
+   "status": "JUDGED",
+   "verdict": "SUCCEEDED",
+   "decision_id": "D-01879",
+   "opened_at": "2026-10-01T15:07:02Z",
+   "deadline": "2026-10-04T15:07:02Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00764",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "STALE_TRIGGER: app_open happened 55 h before it reached us (buffered offline); the viewer is no longer in this session. Event stored for history only.",
+   "at": "2026-10-01T13:00:17Z",
+   "trigger": "app_open",
+   "goal": null
+  },
+  {
+   "decision_id": "D-01879",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0309",
+    "title:T0638",
+    "title:T0767",
+    "title:T0156",
+    "title:T0792",
+    "title:T1304"
+   ],
+   "confidence": 0.55,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T15:07:02Z",
+   "trigger": "app_open",
+   "goal": "G03"
+  },
+  {
+   "decision_id": "D-02083",
+   "status": "PUBLISHED",
+   "action": "HERO_SLOT",
+   "content": [
+    "title:T0309"
+   ],
+   "confidence": 0.55,
+   "reason": "too few titles for a row; single hero title",
+   "at": "2026-10-01T15:32:26Z",
+   "trigger": "app_open",
+   "goal": "G03"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-01879",
+   "decision_id": "D-01879",
+   "viewer_id": "V-1785",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790867226.98,
+   "content": [
+    "title:T0309",
+    "title:T0638",
+    "title:T0767",
+    "title:T0156",
+    "title:T0792",
+    "title:T1304"
+   ],
+   "dialect": "d6",
+   "template": null,
+   "send_at": null,
+   "goal": "G03",
+   "published_at": "2026-10-01T15:07:06Z"
+  },
+  {
+   "action_id": "A-D-02083",
+   "decision_id": "D-02083",
+   "viewer_id": "V-1785",
+   "channel": "HERO_SLOT",
+   "is_message": false,
+   "publish_at": 1790868762.5,
+   "content": [
+    "title:T0309"
+   ],
+   "dialect": "d6",
+   "template": null,
+   "send_at": null,
+   "goal": "G03",
+   "published_at": "2026-10-01T15:32:42Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01879",
+   "viewer_id": "V-1785",
+   "goal_id": "G03",
+   "decision_id": "D-01879",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T15:07:02Z",
+   "deadline": "2026-10-04T15:07:02Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "SUCCEEDED",
+   "reason": "episode_complete at 2026-10-02T20:51:52Z",
+   "evidence": [
+    "event:S0004534"
+   ],
+   "attribution": "goal_met_other_content"
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "what_worked",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G03",
+   "action": "HOME_PAGE",
+   "dialect": "d6",
+   "attribution": "goal_met_other_content",
+   "decision_id": "D-01879"
+  },
+  {
+   "kind": "dialect_confirmed",
+   "ts": "2026-10-11T18:00:01Z",
+   "dialect": "d6",
+   "by": [
+    "event:S0004534"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "viewer_id": "V-4797",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-12T10:20:10Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4797#row4703",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 160215,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4797#row4703",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 160215,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0070294",
+   "observed_at": "2026-10-01T13:00:14Z",
+   "age_s": 1,
+   "conflicts": [
+    "campaign_link:d2"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4797#row4703",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 160215,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4797#row4703",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 160215,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-00748",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "STALE_TRIGGER: app_open happened 44 h before it reached us (buffered offline); the viewer is no longer in this session. Event stored for history only.",
+   "at": "2026-10-01T13:00:15Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}

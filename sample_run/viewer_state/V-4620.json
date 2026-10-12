@@ -1,0 +1,105 @@
+{
+ "viewer_id": "V-4620",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-03T18:52:13Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4620#row4529",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176437,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4620#row4529",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176437,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:E0069428",
+   "observed_at": "2026-10-01T16:30:37Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4620#row4529",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176437,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4620#row4529",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176437,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-02525",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-02525",
+   "opened_at": "2026-10-01T16:30:37Z",
+   "deadline": "2026-10-08T16:30:37Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-02525",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0042",
+    "title:T1097",
+    "title:T0124",
+    "title:T0574",
+    "title:T1474",
+    "title:T0156"
+   ],
+   "confidence": 0.65,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T16:30:37Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-02525",
+   "viewer_id": "V-4620",
+   "goal_id": "G05",
+   "decision_id": "D-02525",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T16:30:37Z",
+   "deadline": "2026-10-08T16:30:37Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": []
+}

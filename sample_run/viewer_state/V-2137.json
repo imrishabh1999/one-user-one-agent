@@ -1,0 +1,34 @@
+{
+ "viewer_id": "V-2137",
+ "arm": "holdout",
+ "facts_at_last_decision": {},
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-00749",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "STALE_TRIGGER: app_open happened 10 h before it reached us (buffered offline); the viewer is no longer in this session. Event stored for history only.",
+   "at": "2026-10-01T13:00:15Z",
+   "trigger": "app_open",
+   "goal": null
+  },
+  {
+   "decision_id": "D-02076",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "DEGRADED: data store unavailable during read_events; cannot assemble or verify evidence, so no action",
+   "at": "2026-10-01T15:31:06Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}

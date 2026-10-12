@@ -1,0 +1,88 @@
+{
+ "viewer_id": "V-2336",
+ "arm": "treatment",
+ "facts_at_last_decision": {},
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00592",
+   "goal_id": "G10",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00592",
+   "opened_at": "2026-10-01T12:51:35Z",
+   "deadline": "2026-10-06T12:51:35Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00592",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.7,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T12:51:35Z",
+   "trigger": "app_open",
+   "goal": "G10"
+  },
+  {
+   "decision_id": "D-02072",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "DEGRADED: data store unavailable during read_events; cannot assemble or verify evidence, so no action",
+   "at": "2026-10-01T15:30:56Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00592",
+   "decision_id": "D-00592",
+   "viewer_id": "V-2336",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790859099.98,
+   "content": [],
+   "dialect": "d1",
+   "template": "INAPP_PLAN_d1",
+   "send_at": "2026-10-01T12:51:35Z",
+   "goal": "G10",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T12:51:39Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00592",
+   "viewer_id": "V-2336",
+   "goal_id": "G10",
+   "decision_id": "D-00592",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T12:51:35Z",
+   "deadline": "2026-10-06T12:51:35Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G10",
+   "titles": [],
+   "action": "IN_APP",
+   "decision_id": "D-00592"
+  }
+ ]
+}

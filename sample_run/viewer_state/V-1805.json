@@ -1,0 +1,174 @@
+{
+ "viewer_id": "V-1805",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-18T21:35:45Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1805#row1771",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 181052,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1805#row1771",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 181052,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-02T21:35:45Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-1805#row1771",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:E0069927",
+   "observed_at": "2026-10-01T17:47:32Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d5",
+    "campaign_link:d5"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1805#row1771",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 181052,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1805#row1771",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 181052,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01934",
+   "goal_id": "G06",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01934",
+   "opened_at": "2026-10-01T15:13:54Z",
+   "deadline": "2026-10-02T21:35:45Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01934",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.35,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T15:13:54Z",
+   "trigger": "app_open",
+   "goal": "G06"
+  },
+  {
+   "decision_id": "D-03047",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0219",
+    "title:T1172",
+    "title:T0574",
+    "title:T1470",
+    "title:T0463",
+    "title:T1474"
+   ],
+   "confidence": 0.35,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T17:47:32Z",
+   "trigger": "app_open",
+   "goal": "G06"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-01934",
+   "decision_id": "D-01934",
+   "viewer_id": "V-1805",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790867643.48,
+   "content": [],
+   "dialect": "d6",
+   "template": "INAPP_PLAN_d6",
+   "send_at": "2026-10-01T15:13:54Z",
+   "goal": "G06",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T15:14:03Z"
+  },
+  {
+   "action_id": "A-D-03047",
+   "decision_id": "D-03047",
+   "viewer_id": "V-1805",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790876856.98,
+   "content": [
+    "title:T0219",
+    "title:T1172",
+    "title:T0574",
+    "title:T1470",
+    "title:T0463",
+    "title:T1474"
+   ],
+   "dialect": "d6",
+   "template": null,
+   "send_at": null,
+   "goal": "G06",
+   "published_at": "2026-10-01T17:47:36Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01934",
+   "viewer_id": "V-1805",
+   "goal_id": "G06",
+   "decision_id": "D-01934",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T15:13:54Z",
+   "deadline": "2026-10-02T21:35:45Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G06",
+   "titles": [],
+   "action": "IN_APP",
+   "decision_id": "D-01934"
+  }
+ ]
+}

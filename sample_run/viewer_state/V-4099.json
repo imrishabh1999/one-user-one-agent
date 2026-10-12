@@ -1,0 +1,141 @@
+{
+ "viewer_id": "V-4099",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-31T20:23:27Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4099#row4022",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 175388,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4099#row4022",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 175388,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0069712",
+   "observed_at": "2026-10-01T17:13:08Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4099#row4022",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 175388,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4099#row4022",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 175388,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01769",
+   "goal_id": "G07",
+   "status": "CLOSED_EARLY",
+   "verdict": "INCONCLUSIVE",
+   "decision_id": "D-01769",
+   "opened_at": "2026-10-01T14:53:10Z",
+   "deadline": "2026-10-08T14:53:10Z",
+   "notes": [
+    "premise false at decision time (late data): app_open event:E0068696 happened at 2026-10-01T14:53:06Z but arrived at 2026-10-01T14:53:10Z, after decision D-01769"
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01769",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0782",
+    "title:T0563",
+    "title:T1200",
+    "title:T0318",
+    "title:T0533",
+    "title:T1176"
+   ],
+   "confidence": 0.7,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T14:53:10Z",
+   "trigger": "app_open",
+   "goal": "G07"
+  },
+  {
+   "decision_id": "D-02035",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "NO_ELIGIBLE_GOAL: no goal can be chosen yet. G01: no_completed_episode: false; G02: no_play: false; G03: exactly_one_completed: false; G04: series_half_watched: false; G05: never_paid: false; G06: on_trial: false; G07: returning_after_14d_gap: false; G08: recent_search_without_play: false; G09: disabled: success requires content outside the viewer's app dialect, which this agent never shows; G10: paid: false; G11: disabled: success signal ['watchlist_add'] never appears in the event stream; unmeasurable; G12: disabled: eligibility text 'Active viewers.' is undefined; not guessing",
+   "at": "2026-10-01T15:26:18Z",
+   "trigger": "app_open",
+   "goal": null
+  },
+  {
+   "decision_id": "D-02824",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "NO_ELIGIBLE_GOAL: no goal can be chosen yet. G01: no_completed_episode: false; G02: no_play: false; G03: exactly_one_completed: false; G04: series_half_watched: false; G05: never_paid: false; G06: on_trial: false; G07: returning_after_14d_gap: false; G08: recent_search_without_play: false; G09: disabled: success requires content outside the viewer's app dialect, which this agent never shows; G10: paid: false; G11: disabled: success signal ['watchlist_add'] never appears in the event stream; unmeasurable; G12: disabled: eligibility text 'Active viewers.' is undefined; not guessing",
+   "at": "2026-10-01T17:13:08Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01769",
+   "viewer_id": "V-4099",
+   "goal_id": "G07",
+   "decision_id": "D-01769",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T14:53:10Z",
+   "deadline": "2026-10-08T14:53:10Z",
+   "judged_at": "2026-10-01T15:26:18Z",
+   "judged_at_ts": 1790868378.0,
+   "verdict": "INCONCLUSIVE",
+   "reason": "premise false at decision time (late data): app_open event:E0068696 happened at 2026-10-01T14:53:06Z but arrived at 2026-10-01T14:53:10Z, after decision D-01769",
+   "closed_early": true,
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "inconclusive",
+   "ts": "2026-10-01T15:26:18Z",
+   "goal": "G07",
+   "reason": "premise false at decision time (late data): app_open event:E0068696 happened at 2026-10-01T14:53:06Z but arrived at 2026-10-01T14:53:10Z, after decision D-01769"
+  },
+  {
+   "kind": "plan_revised",
+   "ts": "2026-10-01T15:26:18Z",
+   "closed": "G07",
+   "verdict": "INCONCLUSIVE",
+   "reason": "premise false at decision time (late data): app_open event:E0068696 happened at 2026-10-01T14:53:06Z but arrived at 2026-10-01T14:53:10Z, after decision D-01769"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "viewer_id": "V-4667",
+ "arm": "treatment",
+ "facts_at_last_decision": {},
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-02074",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "DEGRADED: data store unavailable during read_events; cannot assemble or verify evidence, so no action",
+   "at": "2026-10-01T15:30:59Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}

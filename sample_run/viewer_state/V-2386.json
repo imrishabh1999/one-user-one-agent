@@ -1,0 +1,173 @@
+{
+ "viewer_id": "V-2386",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-25T02:41:33Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2386#row2338",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 165066,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2386#row2338",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 165066,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-09T02:41:33Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-2386#row2338",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:E0068342",
+   "observed_at": "2026-10-01T14:21:06Z",
+   "age_s": 0,
+   "conflicts": [
+    "campaign_link:d3"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2386#row2338",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 165066,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2386#row2338",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 165066,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00117",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00117",
+   "opened_at": "2026-10-01T11:44:40Z",
+   "deadline": "2026-10-08T11:44:40Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00117",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.55,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T11:44:40Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  },
+  {
+   "decision_id": "D-01405",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1323",
+    "title:T0731",
+    "title:T0812",
+    "title:T0228",
+    "title:T0219",
+    "title:T0488"
+   ],
+   "confidence": 0.55,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T14:21:06Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00117",
+   "decision_id": "D-00117",
+   "viewer_id": "V-2386",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790855089.48,
+   "content": [],
+   "dialect": "d2",
+   "template": "INAPP_PLAN_d2",
+   "send_at": "2026-10-01T11:44:40Z",
+   "goal": "G05",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T11:44:49Z"
+  },
+  {
+   "action_id": "A-D-01405",
+   "decision_id": "D-01405",
+   "viewer_id": "V-2386",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790864470.98,
+   "content": [
+    "title:T1323",
+    "title:T0731",
+    "title:T0812",
+    "title:T0228",
+    "title:T0219",
+    "title:T0488"
+   ],
+   "dialect": "d2",
+   "template": null,
+   "send_at": null,
+   "goal": "G05",
+   "published_at": "2026-10-01T14:21:10Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00117",
+   "viewer_id": "V-2386",
+   "goal_id": "G05",
+   "decision_id": "D-00117",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T11:44:40Z",
+   "deadline": "2026-10-08T11:44:40Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G05",
+   "titles": [],
+   "action": "IN_APP",
+   "decision_id": "D-00117"
+  }
+ ]
+}

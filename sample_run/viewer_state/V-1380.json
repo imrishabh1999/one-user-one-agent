@@ -1,0 +1,171 @@
+{
+ "viewer_id": "V-1380",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-06-12T16:39:35Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1380#row1358",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176520,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "paid",
+   "source": "purchase_event",
+   "ref": "event:E0018404",
+   "observed_at": "2026-09-05T23:52:11Z",
+   "age_s": 2219989,
+   "conflicts": [],
+   "note": "paid_until 2026-10-05T23:52:11Z; purchase events outrank the stale snapshot"
+  },
+  "sub_expires_at": {
+   "value": "2026-10-05T23:52:11Z",
+   "source": "derived:purchase+30d",
+   "ref": "event:E0018404",
+   "observed_at": "2026-09-05T23:52:11Z",
+   "age_s": 2219989,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0069446",
+   "observed_at": "2026-10-01T16:32:00Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1380#row1358",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176520,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1380#row1358",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 176520,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-02190",
+   "goal_id": "G10",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-02190",
+   "opened_at": "2026-10-01T15:45:37Z",
+   "deadline": "2026-10-06T15:45:37Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-02190",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.7,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T15:45:37Z",
+   "trigger": "app_open",
+   "goal": "G10"
+  },
+  {
+   "decision_id": "D-02536",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1215",
+    "title:T0716",
+    "title:T0731",
+    "title:T0809",
+    "title:T1020",
+    "title:T0191"
+   ],
+   "confidence": 0.7,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T16:32:00Z",
+   "trigger": "app_open",
+   "goal": "G10"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-02190",
+   "decision_id": "D-02190",
+   "viewer_id": "V-1380",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790869541.98,
+   "content": [],
+   "dialect": "d1",
+   "template": "INAPP_PLAN_d1",
+   "send_at": "2026-10-01T15:45:37Z",
+   "goal": "G10",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T15:45:41Z"
+  },
+  {
+   "action_id": "A-D-02536",
+   "decision_id": "D-02536",
+   "viewer_id": "V-1380",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790872324.98,
+   "content": [
+    "title:T1215",
+    "title:T0716",
+    "title:T0731",
+    "title:T0809",
+    "title:T1020",
+    "title:T0191"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G10",
+   "published_at": "2026-10-01T16:32:04Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-02190",
+   "viewer_id": "V-1380",
+   "goal_id": "G10",
+   "decision_id": "D-02190",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T15:45:37Z",
+   "deadline": "2026-10-06T15:45:37Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G10",
+   "titles": [],
+   "action": "IN_APP",
+   "decision_id": "D-02190"
+  }
+ ]
+}

@@ -1,0 +1,199 @@
+{
+ "viewer_id": "V-3218",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-19T14:11:01Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3218#row3159",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 158963,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3218#row3159",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 158963,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-03T14:11:01Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-3218#row3159",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0068581",
+   "observed_at": "2026-10-01T14:39:23Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d2",
+    "campaign_link:d2"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3218#row3159",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 158963,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3218#row3159",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 158963,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00958",
+   "goal_id": "G02",
+   "status": "JUDGED",
+   "verdict": "SUCCEEDED",
+   "decision_id": "D-00958",
+   "opened_at": "2026-10-01T13:21:55Z",
+   "deadline": "2026-10-02T13:21:55Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00958",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0800",
+    "title:T1200",
+    "title:T0731",
+    "title:T1160",
+    "title:T1277",
+    "title:T0299"
+   ],
+   "confidence": 0.3,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T13:21:55Z",
+   "trigger": "app_open",
+   "goal": "G02"
+  },
+  {
+   "decision_id": "D-01647",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0800",
+    "title:T1200",
+    "title:T0731",
+    "title:T1160",
+    "title:T1277",
+    "title:T0299"
+   ],
+   "confidence": 0.3,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T14:39:23Z",
+   "trigger": "app_open",
+   "goal": "G02"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00958",
+   "decision_id": "D-00958",
+   "viewer_id": "V-3218",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790860924.48,
+   "content": [
+    "title:T0800",
+    "title:T1200",
+    "title:T0731",
+    "title:T1160",
+    "title:T1277",
+    "title:T0299"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G02",
+   "published_at": "2026-10-01T13:22:04Z"
+  },
+  {
+   "action_id": "A-D-01647",
+   "decision_id": "D-01647",
+   "viewer_id": "V-3218",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790865567.98,
+   "content": [
+    "title:T0800",
+    "title:T1200",
+    "title:T0731",
+    "title:T1160",
+    "title:T1277",
+    "title:T0299"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G02",
+   "published_at": "2026-10-01T14:39:27Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00958",
+   "viewer_id": "V-3218",
+   "goal_id": "G02",
+   "decision_id": "D-00958",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T13:21:55Z",
+   "deadline": "2026-10-02T13:21:55Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "SUCCEEDED",
+   "reason": "play_start at 2026-10-01T22:25:52Z",
+   "evidence": [
+    "event:S0007971"
+   ],
+   "attribution": "goal_met_other_content"
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "what_worked",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G02",
+   "action": "HOME_PAGE",
+   "dialect": "d1",
+   "attribution": "goal_met_other_content",
+   "decision_id": "D-00958"
+  },
+  {
+   "kind": "dialect_confirmed",
+   "ts": "2026-10-11T18:00:01Z",
+   "dialect": "d1",
+   "by": [
+    "event:S0007971"
+   ]
+  }
+ ]
+}

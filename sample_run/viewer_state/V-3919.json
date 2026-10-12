@@ -1,0 +1,80 @@
+{
+ "viewer_id": "V-3919",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-06T08:15:39Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3919#row3844",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 172976,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-3919#row3844",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 172976,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0069830",
+   "observed_at": "2026-10-01T17:32:56Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3919#row3844",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 172976,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-3919#row3844",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 172976,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-01906",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "NO_ELIGIBLE_GOAL: no goal can be chosen yet. G01: no_completed_episode: false; G02: no_play: false; G03: exactly_one_completed: false; G04: series_half_watched: false; G05: never_paid: false; G06: on_trial: false; G07: returning_after_14d_gap: false; G08: recent_search_without_play: false; G09: disabled: success requires content outside the viewer's app dialect, which this agent never shows; G10: paid: false; G11: disabled: success signal ['watchlist_add'] never appears in the event stream; unmeasurable; G12: disabled: eligibility text 'Active viewers.' is undefined; not guessing",
+   "at": "2026-10-01T15:10:58Z",
+   "trigger": "app_open",
+   "goal": null
+  },
+  {
+   "decision_id": "D-02955",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "NO_ELIGIBLE_GOAL: no goal can be chosen yet. G01: no_completed_episode: false; G02: no_play: false; G03: exactly_one_completed: false; G04: series_half_watched: false; G05: never_paid: false; G06: on_trial: false; G07: returning_after_14d_gap: false; G08: recent_search_without_play: false; G09: disabled: success requires content outside the viewer's app dialect, which this agent never shows; G10: paid: false; G11: disabled: success signal ['watchlist_add'] never appears in the event stream; unmeasurable; G12: disabled: eligibility text 'Active viewers.' is undefined; not guessing",
+   "at": "2026-10-01T17:32:56Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}

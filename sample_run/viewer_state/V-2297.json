@@ -1,0 +1,135 @@
+{
+ "viewer_id": "V-2297",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-08-27T10:47:29Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2297#row2252",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 161889,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2297#row2252",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 161889,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d4",
+   "source": "app_setting",
+   "ref": "event:E0067951",
+   "observed_at": "2026-10-01T13:28:09Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2297#row2252",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 161889,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2297#row2252",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 161889,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01002",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "SUCCEEDED",
+   "decision_id": "D-01002",
+   "opened_at": "2026-10-01T13:28:09Z",
+   "deadline": "2026-10-08T13:28:09Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01002",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.7,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T13:28:09Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-01002",
+   "decision_id": "D-01002",
+   "viewer_id": "V-2297",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790861293.98,
+   "content": [],
+   "dialect": "d4",
+   "template": "INAPP_PLAN_d4",
+   "send_at": "2026-10-01T13:28:09Z",
+   "goal": "G05",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T13:28:13Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01002",
+   "viewer_id": "V-2297",
+   "goal_id": "G05",
+   "decision_id": "D-01002",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T13:28:09Z",
+   "deadline": "2026-10-08T13:28:09Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "SUCCEEDED",
+   "reason": "purchase at 2026-10-05T21:08:02Z",
+   "evidence": [
+    "event:S0005766"
+   ],
+   "attribution": "after_served_message"
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "what_worked",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G05",
+   "action": "IN_APP",
+   "dialect": "d4",
+   "attribution": "after_served_message",
+   "decision_id": "D-01002"
+  },
+  {
+   "kind": "dialect_confirmed",
+   "ts": "2026-10-11T18:00:01Z",
+   "dialect": "d4",
+   "by": [
+    "event:S0005766"
+   ]
+  }
+ ]
+}

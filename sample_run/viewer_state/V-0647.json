@@ -1,0 +1,78 @@
+{
+ "viewer_id": "V-0647",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-05-26T12:42:41Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0647#row634",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 156607,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "paid",
+   "source": "purchase_event",
+   "ref": "event:E0008426",
+   "observed_at": "2026-09-04T08:37:46Z",
+   "age_s": 2348541,
+   "conflicts": [],
+   "note": "paid_until 2026-10-04T08:37:20Z; purchase events outrank the stale snapshot"
+  },
+  "sub_expires_at": {
+   "value": "2026-10-04T08:37:20Z",
+   "source": "derived:purchase+30d",
+   "ref": "event:E0008426",
+   "observed_at": "2026-09-04T08:37:46Z",
+   "age_s": 2348541,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d3",
+   "source": "app_setting",
+   "ref": "event:E0070255",
+   "observed_at": "2026-10-01T13:00:07Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0647#row634",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 156607,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0647#row634",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 156607,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-00696",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "STALE_TRIGGER: app_open happened 80 h before it reached us (buffered offline); the viewer is no longer in this session. Event stored for history only.",
+   "at": "2026-10-01T13:00:07Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}

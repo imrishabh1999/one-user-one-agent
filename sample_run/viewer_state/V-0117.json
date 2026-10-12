@@ -1,0 +1,156 @@
+{
+ "viewer_id": "V-0117",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-18T14:24:52Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0117#row115",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 176744,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-0117#row115",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 176744,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:E0069852",
+   "observed_at": "2026-10-01T17:35:44Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d3"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0117#row115",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 176744,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-0117#row115",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 176744,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-02972",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-02972",
+   "opened_at": "2026-10-01T17:35:44Z",
+   "deadline": "2026-10-08T17:35:44Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00780",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "STALE_TRIGGER: app_open happened 86 h before it reached us (buffered offline); the viewer is no longer in this session. Event stored for history only.",
+   "at": "2026-10-01T13:00:18Z",
+   "trigger": "app_open",
+   "goal": null
+  },
+  {
+   "decision_id": "D-02972",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1474",
+    "title:T1438",
+    "title:T0721",
+    "title:T0066",
+    "title:T0458",
+    "title:T1097"
+   ],
+   "confidence": 0.6,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T17:35:44Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-02972",
+   "decision_id": "D-02972",
+   "viewer_id": "V-0117",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790876148.98,
+   "content": [
+    "title:T1474",
+    "title:T1438",
+    "title:T0721",
+    "title:T0066",
+    "title:T0458",
+    "title:T1097"
+   ],
+   "dialect": "d6",
+   "template": null,
+   "send_at": null,
+   "goal": "G05",
+   "published_at": "2026-10-01T17:35:48Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-02972",
+   "viewer_id": "V-0117",
+   "goal_id": "G05",
+   "decision_id": "D-02972",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T17:35:44Z",
+   "deadline": "2026-10-08T17:35:44Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G05",
+   "titles": [
+    "T1474",
+    "T1438",
+    "T0721",
+    "T0066",
+    "T0458",
+    "T1097"
+   ],
+   "action": "HOME_PAGE",
+   "decision_id": "D-02972"
+  }
+ ]
+}

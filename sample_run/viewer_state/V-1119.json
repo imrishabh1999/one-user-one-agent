@@ -1,0 +1,179 @@
+{
+ "viewer_id": "V-1119",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-08-21T20:27:20Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1119#row1100",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 166611,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1119#row1100",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 166611,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0069111",
+   "observed_at": "2026-10-01T15:46:51Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d4"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1119#row1100",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 166611,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1119#row1100",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 166611,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-02195",
+   "goal_id": "G01",
+   "status": "JUDGED",
+   "verdict": "SUCCEEDED",
+   "decision_id": "D-02195",
+   "opened_at": "2026-10-01T15:46:11Z",
+   "deadline": "2026-10-04T15:46:11Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-02195",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1277",
+    "title:T0672",
+    "title:T1020",
+    "title:T1197",
+    "title:T0731",
+    "title:T0154"
+   ],
+   "confidence": 0.55,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T15:46:11Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  },
+  {
+   "decision_id": "D-02201",
+   "status": "PUBLISHED",
+   "action": "HERO_SLOT",
+   "content": [
+    "title:T1277"
+   ],
+   "confidence": 0.55,
+   "reason": "too few titles for a row; single hero title",
+   "at": "2026-10-01T15:46:51Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-02195",
+   "decision_id": "D-02195",
+   "viewer_id": "V-1119",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790869575.98,
+   "content": [
+    "title:T1277",
+    "title:T0672",
+    "title:T1020",
+    "title:T1197",
+    "title:T0731",
+    "title:T0154"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G01",
+   "published_at": "2026-10-01T15:46:15Z"
+  },
+  {
+   "action_id": "A-D-02201",
+   "decision_id": "D-02201",
+   "viewer_id": "V-1119",
+   "channel": "HERO_SLOT",
+   "is_message": false,
+   "publish_at": 1790869616.1,
+   "content": [
+    "title:T1277"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G01",
+   "published_at": "2026-10-01T15:46:56Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-02195",
+   "viewer_id": "V-1119",
+   "goal_id": "G01",
+   "decision_id": "D-02195",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T15:46:11Z",
+   "deadline": "2026-10-04T15:46:11Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 2,
+   "rule_version_used": 2,
+   "late_events_not_counted": [],
+   "verdict": "SUCCEEDED",
+   "reason": "episode_complete at 2026-10-01T21:47:40Z",
+   "evidence": [
+    "event:S0002958"
+   ],
+   "attribution": "via_served_content"
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "what_worked",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G01",
+   "action": "HOME_PAGE",
+   "dialect": "d1",
+   "attribution": "via_served_content",
+   "decision_id": "D-02195"
+  },
+  {
+   "kind": "dialect_confirmed",
+   "ts": "2026-10-11T18:00:01Z",
+   "dialect": "d1",
+   "by": [
+    "event:S0002958"
+   ]
+  }
+ ]
+}

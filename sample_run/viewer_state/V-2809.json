@@ -1,0 +1,98 @@
+{
+ "viewer_id": "V-2809",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-05-12T21:55:07Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2809#row2757",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 157963,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2809#row2757",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 157963,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0068347",
+   "observed_at": "2026-10-01T14:22:43Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2809#row2757",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 157963,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2809#row2757",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 157963,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01415",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01415",
+   "opened_at": "2026-10-01T14:22:43Z",
+   "deadline": "2026-10-08T14:22:43Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01415",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.7,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T14:22:43Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01415",
+   "viewer_id": "V-2809",
+   "goal_id": "G05",
+   "decision_id": "D-01415",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T14:22:43Z",
+   "deadline": "2026-10-08T14:22:43Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": []
+}

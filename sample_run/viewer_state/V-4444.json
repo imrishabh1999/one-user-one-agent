@@ -1,0 +1,80 @@
+{
+ "viewer_id": "V-4444",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-08-15T15:14:37Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4444#row4357",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 153004,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "paid",
+   "source": "purchase_event",
+   "ref": "event:E0059303",
+   "observed_at": "2026-09-04T15:01:53Z",
+   "age_s": 2325491,
+   "conflicts": [],
+   "note": "paid_until 2026-10-04T15:01:33Z; purchase events outrank the stale snapshot"
+  },
+  "sub_expires_at": {
+   "value": "2026-10-04T15:01:33Z",
+   "source": "derived:purchase+30d",
+   "ref": "event:E0059303",
+   "observed_at": "2026-09-04T15:01:53Z",
+   "age_s": 2325491,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:E0070232",
+   "observed_at": "2026-10-01T13:00:04Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d4"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4444#row4357",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 153004,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4444#row4357",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 153004,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-00675",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "STALE_TRIGGER: app_open happened 19 h before it reached us (buffered offline); the viewer is no longer in this session. Event stored for history only.",
+   "at": "2026-10-01T13:00:04Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}

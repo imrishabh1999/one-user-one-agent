@@ -1,0 +1,183 @@
+{
+ "viewer_id": "V-1816",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-21T00:44:10Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1816#row1782",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 174683,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1816#row1782",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 174683,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-05T00:44:10Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-1816#row1782",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:E0069211",
+   "observed_at": "2026-10-01T16:01:23Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1816#row1782",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 174683,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1816#row1782",
+   "observed_at": "2026-09-29T15:30:00Z",
+   "age_s": 174683,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00564",
+   "goal_id": "G05",
+   "status": "JUDGED",
+   "verdict": "SUCCEEDED",
+   "decision_id": "D-00564",
+   "opened_at": "2026-10-01T12:47:46Z",
+   "deadline": "2026-10-08T12:47:46Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00564",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.65,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T12:47:46Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  },
+  {
+   "decision_id": "D-02301",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0104",
+    "title:T0202",
+    "title:T0136",
+    "title:T1219",
+    "title:T1050",
+    "title:T0917"
+   ],
+   "confidence": 0.65,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T16:01:23Z",
+   "trigger": "app_open",
+   "goal": "G05"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00564",
+   "decision_id": "D-00564",
+   "viewer_id": "V-1816",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790858870.98,
+   "content": [],
+   "dialect": "d5",
+   "template": "INAPP_PLAN_d5",
+   "send_at": "2026-10-01T12:47:46Z",
+   "goal": "G05",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T12:47:50Z"
+  },
+  {
+   "action_id": "A-D-02301",
+   "decision_id": "D-02301",
+   "viewer_id": "V-1816",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790870487.98,
+   "content": [
+    "title:T0104",
+    "title:T0202",
+    "title:T0136",
+    "title:T1219",
+    "title:T1050",
+    "title:T0917"
+   ],
+   "dialect": "d5",
+   "template": null,
+   "send_at": null,
+   "goal": "G05",
+   "published_at": "2026-10-01T16:01:27Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00564",
+   "viewer_id": "V-1816",
+   "goal_id": "G05",
+   "decision_id": "D-00564",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T12:47:46Z",
+   "deadline": "2026-10-08T12:47:46Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "SUCCEEDED",
+   "reason": "purchase at 2026-10-01T21:44:03Z",
+   "evidence": [
+    "event:S0004614"
+   ],
+   "attribution": "after_served_message"
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "what_worked",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G05",
+   "action": "IN_APP",
+   "dialect": "d5",
+   "attribution": "after_served_message",
+   "decision_id": "D-00564"
+  },
+  {
+   "kind": "dialect_confirmed",
+   "ts": "2026-10-11T18:00:01Z",
+   "dialect": "d5",
+   "by": [
+    "event:S0004614"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "viewer_id": "V-1087",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-28T10:36:32Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1087#row1070",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162973,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "trial",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1087#row1070",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162973,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "trial_ends_at": {
+   "value": "2026-10-12T10:36:32Z",
+   "source": "derived:signup+14d",
+   "ref": "profile:V-1087#row1070",
+   "observed_at": null,
+   "age_s": null,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d2",
+   "source": "app_setting",
+   "ref": "event:E0068076",
+   "observed_at": "2026-10-01T13:46:13Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1087#row1070",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162973,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1087#row1070",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 162973,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00803",
+   "goal_id": "G02",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00803",
+   "opened_at": "2026-10-01T13:00:40Z",
+   "deadline": "2026-10-02T13:00:40Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00803",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0731",
+    "title:T0328",
+    "title:T0308",
+    "title:T0010",
+    "title:T0815",
+    "title:T1092"
+   ],
+   "confidence": 0.5,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T13:00:40Z",
+   "trigger": "app_open",
+   "goal": "G02"
+  },
+  {
+   "decision_id": "D-01131",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0731",
+    "title:T0328",
+    "title:T0308",
+    "title:T0010",
+    "title:T0815",
+    "title:T1092"
+   ],
+   "confidence": 0.5,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T13:46:13Z",
+   "trigger": "app_open",
+   "goal": "G02"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00803",
+   "viewer_id": "V-1087",
+   "goal_id": "G02",
+   "decision_id": "D-00803",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T13:00:40Z",
+   "deadline": "2026-10-02T13:00:40Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": []
+}

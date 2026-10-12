@@ -1,0 +1,173 @@
+{
+ "viewer_id": "V-2328",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-06-14T00:39:35Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2328#row2282",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 169818,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "paid",
+   "source": "purchase_event",
+   "ref": "event:E0031060",
+   "observed_at": "2026-09-03T23:56:06Z",
+   "age_s": 2389452,
+   "conflicts": [],
+   "note": "paid_until 2026-10-03T23:55:41Z; purchase events outrank the stale snapshot"
+  },
+  "sub_expires_at": {
+   "value": "2026-10-03T23:55:41Z",
+   "source": "derived:purchase+30d",
+   "ref": "event:E0031060",
+   "observed_at": "2026-09-03T23:56:06Z",
+   "age_s": 2389452,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0069059",
+   "observed_at": "2026-10-01T15:40:18Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d3"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2328#row2282",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 169818,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2328#row2282",
+   "observed_at": "2026-09-29T16:30:00Z",
+   "age_s": 169818,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01155",
+   "goal_id": "G10",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01155",
+   "opened_at": "2026-10-01T13:48:18Z",
+   "deadline": "2026-10-06T13:48:18Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01155",
+   "status": "PUBLISHED",
+   "action": "IN_APP",
+   "content": [],
+   "confidence": 0.65,
+   "reason": "viewer is in session and the goal is a plan purchase: show the plan offer",
+   "at": "2026-10-01T13:48:18Z",
+   "trigger": "app_open",
+   "goal": "G10"
+  },
+  {
+   "decision_id": "D-02146",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0998",
+    "title:T1257",
+    "title:T0686",
+    "title:T0987",
+    "title:T0618",
+    "title:T0630"
+   ],
+   "confidence": 0.65,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T15:40:18Z",
+   "trigger": "app_open",
+   "goal": "G10"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-01155",
+   "decision_id": "D-01155",
+   "viewer_id": "V-2328",
+   "channel": "IN_APP",
+   "is_message": true,
+   "publish_at": 1790862502.98,
+   "content": [],
+   "dialect": "d1",
+   "template": "INAPP_PLAN_d1",
+   "send_at": "2026-10-01T13:48:18Z",
+   "goal": "G10",
+   "local_day": "2026-10-01",
+   "published_at": "2026-10-01T13:48:22Z"
+  },
+  {
+   "action_id": "A-D-02146",
+   "decision_id": "D-02146",
+   "viewer_id": "V-2328",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790869222.98,
+   "content": [
+    "title:T0998",
+    "title:T1257",
+    "title:T0686",
+    "title:T0987",
+    "title:T0618",
+    "title:T0630"
+   ],
+   "dialect": "d1",
+   "template": null,
+   "send_at": null,
+   "goal": "G10",
+   "published_at": "2026-10-01T15:40:22Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01155",
+   "viewer_id": "V-2328",
+   "goal_id": "G10",
+   "decision_id": "D-01155",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T13:48:18Z",
+   "deadline": "2026-10-06T13:48:18Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G10",
+   "titles": [],
+   "action": "IN_APP",
+   "decision_id": "D-01155"
+  }
+ ]
+}

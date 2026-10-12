@@ -1,0 +1,179 @@
+{
+ "viewer_id": "V-4634",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-09-03T01:49:50Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4634#row4543",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 155471,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "never_paid",
+   "source": "profile_snapshot",
+   "ref": "profile:V-4634#row4543",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 155471,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d5",
+   "source": "app_setting",
+   "ref": "event:E0068043",
+   "observed_at": "2026-10-01T13:41:11Z",
+   "age_s": 0,
+   "conflicts": [
+    "profile:d4",
+    "campaign_link:d4"
+   ],
+   "note": "app setting is what the viewer sees; others recorded as conflicts"
+  },
+  "consent_push": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4634#row4543",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 155471,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-4634#row4543",
+   "observed_at": "2026-09-29T18:30:00Z",
+   "age_s": 155471,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-00939",
+   "goal_id": "G01",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-00939",
+   "opened_at": "2026-10-01T13:19:34Z",
+   "deadline": "2026-10-04T13:19:34Z",
+   "notes": [
+    "success rule corrected v1->v2 at 2026-10-01T15:00:00Z; will be judged under v2, v1 verdict also reported"
+   ]
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-00939",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0033",
+    "title:T1322",
+    "title:T0479",
+    "title:T0589",
+    "title:T1249",
+    "title:T1032"
+   ],
+   "confidence": 0.45,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T13:19:34Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  },
+  {
+   "decision_id": "D-01096",
+   "status": "PUBLISHED",
+   "action": "HERO_SLOT",
+   "content": [
+    "title:T0033"
+   ],
+   "confidence": 0.45,
+   "reason": "too few titles for a row; single hero title",
+   "at": "2026-10-01T13:41:11Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-00939",
+   "decision_id": "D-00939",
+   "viewer_id": "V-4634",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790860778.98,
+   "content": [
+    "title:T0033",
+    "title:T1322",
+    "title:T0479",
+    "title:T0589",
+    "title:T1249",
+    "title:T1032"
+   ],
+   "dialect": "d5",
+   "template": null,
+   "send_at": null,
+   "goal": "G01",
+   "published_at": "2026-10-01T13:19:38Z"
+  },
+  {
+   "action_id": "A-D-01096",
+   "decision_id": "D-01096",
+   "viewer_id": "V-4634",
+   "channel": "HERO_SLOT",
+   "is_message": false,
+   "publish_at": 1790862076.1,
+   "content": [
+    "title:T0033"
+   ],
+   "dialect": "d5",
+   "template": null,
+   "send_at": null,
+   "goal": "G01",
+   "published_at": "2026-10-01T13:41:16Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-00939",
+   "viewer_id": "V-4634",
+   "goal_id": "G01",
+   "decision_id": "D-00939",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T13:19:34Z",
+   "deadline": "2026-10-04T13:19:34Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 2,
+   "verdict_under_rule_at_open": "FAILED",
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": [],
+   "verdict_changed_by_rule_correction": false
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G01",
+   "titles": [
+    "T0033",
+    "T1322",
+    "T0479",
+    "T0589",
+    "T1249",
+    "T1032"
+   ],
+   "action": "HOME_PAGE",
+   "decision_id": "D-00939"
+  }
+ ]
+}

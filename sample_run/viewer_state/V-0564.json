@@ -1,0 +1,108 @@
+{
+ "viewer_id": "V-0564",
+ "arm": "treatment",
+ "facts_at_last_decision": {},
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01997",
+   "goal_id": "G01",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01997",
+   "opened_at": "2026-10-01T15:21:29Z",
+   "deadline": "2026-10-04T15:21:29Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01997",
+   "status": "PUBLISHED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T0649",
+    "title:T0290",
+    "title:T0419",
+    "title:T0171",
+    "title:T0421",
+    "title:T0088"
+   ],
+   "confidence": 0.65,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T15:21:29Z",
+   "trigger": "app_open",
+   "goal": "G01"
+  },
+  {
+   "decision_id": "D-02070",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": null,
+   "reason": "DEGRADED: data store unavailable during read_events; cannot assemble or verify evidence, so no action",
+   "at": "2026-10-01T15:30:17Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [
+  {
+   "action_id": "A-D-01997",
+   "decision_id": "D-01997",
+   "viewer_id": "V-0564",
+   "channel": "HOME_PAGE",
+   "is_message": false,
+   "publish_at": 1790868093.98,
+   "content": [
+    "title:T0649",
+    "title:T0290",
+    "title:T0419",
+    "title:T0171",
+    "title:T0421",
+    "title:T0088"
+   ],
+   "dialect": "d3",
+   "template": null,
+   "send_at": null,
+   "goal": "G01",
+   "published_at": "2026-10-01T15:21:33Z"
+  }
+ ],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01997",
+   "viewer_id": "V-0564",
+   "goal_id": "G01",
+   "decision_id": "D-01997",
+   "arm": "treatment",
+   "opened_at": "2026-10-01T15:21:29Z",
+   "deadline": "2026-10-04T15:21:29Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 2,
+   "rule_version_used": 2,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": [
+  {
+   "kind": "content_failed",
+   "ts": "2026-10-11T18:00:01Z",
+   "goal": "G01",
+   "titles": [
+    "T0649",
+    "T0290",
+    "T0419",
+    "T0171",
+    "T0421",
+    "T0088"
+   ],
+   "action": "HOME_PAGE",
+   "decision_id": "D-01997"
+  }
+ ]
+}

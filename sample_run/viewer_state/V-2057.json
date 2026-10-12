@@ -1,0 +1,114 @@
+{
+ "viewer_id": "V-2057",
+ "arm": "holdout",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-07-16T15:05:08Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2057#row2017",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 162493,
+   "conflicts": [],
+   "note": null
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2057#row2017",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 162493,
+   "conflicts": [],
+   "note": "profile said paid but sub_expires_at has passed"
+  },
+  "sub_expires_at": {
+   "value": "2026-09-29T22:55:45Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-2057#row2017",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 162493,
+   "conflicts": [],
+   "note": null
+  },
+  "dialect": {
+   "value": "d1",
+   "source": "app_setting",
+   "ref": "event:E0068552",
+   "observed_at": "2026-10-01T14:38:13Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2057#row2017",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 162493,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-2057#row2017",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 162493,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [
+  {
+   "goal_instance_id": "GI-D-01627",
+   "goal_id": "G03",
+   "status": "JUDGED",
+   "verdict": "FAILED",
+   "decision_id": "D-01627",
+   "opened_at": "2026-10-01T14:38:13Z",
+   "deadline": "2026-10-04T14:38:13Z",
+   "notes": []
+  }
+ ],
+ "decisions": [
+  {
+   "decision_id": "D-01627",
+   "status": "HOLDOUT_SUPPRESSED",
+   "action": "HOME_PAGE",
+   "content": [
+    "title:T1020",
+    "title:T0731",
+    "title:T1197",
+    "title:T0154",
+    "title:T0197",
+    "title:T0793"
+   ],
+   "confidence": 0.65,
+   "reason": "home-page row of goal-appropriate titles in the app dialect",
+   "at": "2026-10-01T14:38:13Z",
+   "trigger": "app_open",
+   "goal": "G03"
+  }
+ ],
+ "actions": [],
+ "outcomes": [
+  {
+   "goal_instance_id": "GI-D-01627",
+   "viewer_id": "V-2057",
+   "goal_id": "G03",
+   "decision_id": "D-01627",
+   "arm": "holdout",
+   "opened_at": "2026-10-01T14:38:13Z",
+   "deadline": "2026-10-04T14:38:13Z",
+   "judged_at": "2026-10-11T18:00:01Z",
+   "judged_at_ts": 1791741601.98,
+   "rule_version_at_open": 1,
+   "rule_version_used": 1,
+   "late_events_not_counted": [],
+   "verdict": "FAILED",
+   "reason": "no qualifying success event inside the window",
+   "evidence": []
+  }
+ ],
+ "learnings": []
+}

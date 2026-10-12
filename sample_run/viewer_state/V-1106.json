@@ -1,0 +1,80 @@
+{
+ "viewer_id": "V-1106",
+ "arm": "treatment",
+ "facts_at_last_decision": {
+  "signup": {
+   "value": "2026-05-18T07:08:40Z",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1106#row1086",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 173508,
+   "conflicts": [],
+   "note": "2 profile rows; using newest updated_at 2026-09-29T17:30:00Z; duplicate rows with identical updated_at disagree on ['preferred_dialect']; treated as unknown"
+  },
+  "subscription": {
+   "value": "lapsed",
+   "source": "profile_snapshot",
+   "ref": "profile:V-1106#row1086",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 173508,
+   "conflicts": [],
+   "note": "from profile snapshot"
+  },
+  "dialect": {
+   "value": "d6",
+   "source": "app_setting",
+   "ref": "event:E0069893",
+   "observed_at": "2026-10-01T17:41:48Z",
+   "age_s": 0,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_push": {
+   "value": false,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1106#row1086",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 173508,
+   "conflicts": [],
+   "note": null
+  },
+  "consent_whatsapp": {
+   "value": true,
+   "source": "profile_snapshot",
+   "ref": "profile:V-1106#row1086",
+   "observed_at": "2026-09-29T17:30:00Z",
+   "age_s": 173508,
+   "conflicts": [],
+   "note": null
+  }
+ },
+ "active_goal": null,
+ "goals": [],
+ "decisions": [
+  {
+   "decision_id": "D-00210",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": 0.65,
+   "reason": "VERIFIER_REJECTED_GOAL: independent check disagreed with the chosen goal (eligibility: G02: account=False plays=0); no goal opened",
+   "at": "2026-10-01T11:58:27Z",
+   "trigger": "app_open",
+   "goal": null
+  },
+  {
+   "decision_id": "D-03013",
+   "status": "NO_ACTION",
+   "action": "NONE",
+   "content": [],
+   "confidence": 0.65,
+   "reason": "VERIFIER_REJECTED_GOAL: independent check disagreed with the chosen goal (eligibility: G02: account=False plays=0); no goal opened",
+   "at": "2026-10-01T17:41:48Z",
+   "trigger": "app_open",
+   "goal": null
+  }
+ ],
+ "actions": [],
+ "outcomes": [],
+ "learnings": []
+}
